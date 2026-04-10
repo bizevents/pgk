@@ -5,11 +5,10 @@ function FooterLogo() {
     <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 24 }}>
       <div
         style={{
-          width: 38, height: 38, background: "#2E5BA8",
-          borderRadius: "6px", display: "flex", alignItems: "center", justifyContent: "center",
+          width: 38, height: 38,display: "flex", alignItems: "center", justifyContent: "center",
         }}
       >
-        <span style={{ fontSize: 18 }} role="img" aria-label="film camera">🎬</span>
+        <img src="/images/pgk-logo.jpg" style={{width:"60px"}}/>
       </div>
       <div>
         <div
