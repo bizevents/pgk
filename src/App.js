@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyles  from "./styles/GlobalStyles";
+import Navbar        from "./components/Navbar";
+import Hero          from "./components/Hero";
+import About         from "./components/About";
+import Programs      from "./components/Programs";
+import Productions   from "./components/Productions";
+import Events        from "./components/Events";
+import Testimonials  from "./components/Testimonials";
+import Membership    from "./components/Membership";
+import CTABanner     from "./components/Ctabanner";
+import Footer        from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        fontFamily: "'Cormorant Garamond', Georgia, serif",
+        background: "#FFFFFF",
+        color: "#111827",
+        minHeight: "100vh",
+        overflowX: "hidden",
+      }}
+    >
+      <GlobalStyles />
+
+      <Navbar />
+
+      <main>
+        <Hero />
+        <About />
+        <Programs />
+        <Productions />
+        <Events />
+        <Testimonials />
+        <Membership />
+        <CTABanner />
+      </main>
+
+      <Footer />
     </div>
   );
 }
-
-export default App;
