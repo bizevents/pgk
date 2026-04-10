@@ -26,7 +26,7 @@ function Logo() {
           display: "flex", alignItems: "center", justifyContent: "center",
         }}
       >
-        <img src="images/pgk-logo.jpg" style={{width:"60px"}}/>
+        <img src="images/pgk-logo.jpg" style={{width:"60px"}} alt="logo"/>
       </div>
       <div>
         <div

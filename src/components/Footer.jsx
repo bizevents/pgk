@@ -9,7 +9,7 @@ function FooterLogo() {
           borderRadius: "6px", display: "flex", alignItems: "center", justifyContent: "center",
         }}
       >
-        <span style={{ fontSize: 18 }}>🎬</span>
+        <span style={{ fontSize: 18 }} role="img" aria-label="film camera">🎬</span>
       </div>
       <div>
         <div
@@ -44,7 +44,7 @@ function FooterColumn({ heading, links }) {
         {heading}
       </div>
       {links.map((l) => (
-        <a key={l} href="#" className="footer-link">
+        <a key={l} href="/" className="footer-link">
           {l}
         </a>
       ))}
@@ -54,7 +54,7 @@ function FooterColumn({ heading, links }) {
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#0F1F3D", padding: "80px 56px 48px" }}>
+    <footer id="contact" style={{ background: "#0F1F3D", padding: "80px 56px 48px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
 
         {/* Top grid */}
@@ -95,7 +95,7 @@ export default function Footer() {
             {["Privacy Policy", "Terms of Use", "Contact"].map((l) => (
               <a
                 key={l}
-                href="#"
+                href="/"
                 className="footer-link"
                 style={{ marginBottom: 0, fontSize: 12, color: "rgba(255,255,255,0.35)" }}
               >
